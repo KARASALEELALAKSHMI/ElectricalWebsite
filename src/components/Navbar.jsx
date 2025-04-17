@@ -8,7 +8,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="flex items-center space-x-2">
           {/* If using image */}
-          <img src="public\imgs\logo2.png" alt="Robotics Store" className="w-10 h-10 object-contain" />
+          <img src="/imgs/logo2.png" alt="Robotics Store" className="w-10 h-10 object-contain" />
 
           {/* If using text instead */}
            <span className="text-2xl font-bold text-black">Electronics Store</span> 
