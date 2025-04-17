@@ -16,7 +16,7 @@ const About = () => {
           Welcome to India’s trusted destination for high-quality electronics, robotics parts, and DIY components.
         </p>
         <p className="text-lg sm:text-xl text-gray-700 mb-6">
-          Whether you're working on a school project, building a robot, or developing a smart home device, we provide everything you need
+          Whether you are working on a school project, building a robot, or developing a smart home device, we provide everything you need
           to turn your ideas into reality—from microcontrollers to motors and sensors.
         </p>
         <h3 className="text-2xl font-semibold text-black-600 mb-4">
