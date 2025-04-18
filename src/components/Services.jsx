@@ -5,8 +5,8 @@ const services = [
   {
     category: "Development",
     items: [
-      { icon: <FaMicrochip />, title: "Embedded System Design", desc: "Custom embedded hardware LEELA firmware solutions." },
-      { icon: <FaNetworkWired />, title: "IoT Solutions", desc: "Smart IoT based monitoring & automation systems." },
+      { icon: <FaMicrochip />, title: "Embedded System Design", desc: "Custom embedded hardware and firmware solutions." },
+      { icon: <FaNetworkWired />, title: "IoT Solutions", desc: "Smart IoT based monitoring and automation systems." },
     ],
   },
   {
