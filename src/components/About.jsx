@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from './Navbar';
+
 
 const About = () => {
   return (
@@ -8,7 +8,6 @@ const About = () => {
       className="min-h-screen bg-cover bg-center flex items-center justify-center w-full overflow-hidden bg-white py-16"
     >
       <div className="container mx-auto text-center px-4">
-        <Navbar/>
         <h2 className="text-4xl sm:text-5xl font-bold text-black-800 mb-6">
           About Our Store
         </h2>
