@@ -1,14 +1,17 @@
 import React from 'react'
 import Header from './components/Header'
-import About from './components/About'
 import Services from './components/Services'
+import Features from './components/Features'
+import Component from './components/Component'
 
 const App = () => {
   return (
     <div>
       <Header/>
-      <About/>
+      <Features/>
       <Services/>
+      <Component/>
+      
     </div>
   )
 }

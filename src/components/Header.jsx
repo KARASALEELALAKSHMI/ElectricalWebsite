@@ -3,9 +3,9 @@ import { FaPhone, FaHeart, FaShoppingBag, FaSearch, FaChevronDown,FaListUl } fro
 
 
 const bannerImages = [
-  "public/imgs/arduino.jpg",
-  "public/imgs/raspberry.jpg",
-  "public/imgs/gas-sensor.jpg", // Replace with your actual image URLs
+  "/imgs/arduino.jpg",
+  "/imgs/raspberry.jpg",
+  "/imgs/gas-sensor.jpg", // Replace with your actual image URLs
 ];
 
 const bannerContent = [
@@ -199,7 +199,7 @@ const [showBlog, setShowBlog] = useState(false);
     <div className="absolute mt-1 bg-white shadow-lg border rounded-b-md w-48 z-50">
       <ul className="text-sm text-gray-800">
         <li className="px-4 py-2 border-b hover:bg-gray-100 cursor-pointer">
-          Arduino
+        <a href="#components">All Products</a>
         </li>
         <li className="px-4 py-2 border-b hover:bg-gray-100 cursor-pointer">
           Raspberry Pi
