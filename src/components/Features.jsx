@@ -60,13 +60,16 @@ const products = [
 
 const FeaturedProducts = () => {
   return (
-    <div className="bg-white py-16 px-6">
-      <h2 className="text-3xl font-bold text-gray-800 mb-8">Featured Products</h2>
+    <div
+      className="py-16 px-6 bg-cover bg-center"
+      style={{ backgroundImage: `url('imgs/Feature.bg.avif')` }}
+    >
+      <h2 className="text-3xl font-bold text-white mb-8">Featured Products</h2>
       <div className="flex gap-6 overflow-x-auto pb-4">
         {products.map((product, index) => (
           <div
             key={index}
-            className="flex-shrink-0 w-64 border rounded-lg p-4 shadow hover:shadow-lg transition"
+            className="flex-shrink-0 w-64 border rounded-lg p-4 shadow hover:shadow-lg transition bg-white/90"
           >
             <p className="text-sm text-gray-500 mb-1">{product.category}</p>
             <img

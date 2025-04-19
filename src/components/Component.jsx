@@ -123,18 +123,21 @@ const Component = () => {
   };
 
   return (
-    <section id="components" className="bg-white min-h-screen py-10 px-4 sm:px-6 lg:px-8">
+    <section
+      id="components"
+      className="bg-cover bg-center min-h-screen py-10 px-4 sm:px-6 lg:px-8"
+      style={{ backgroundImage: "url('imgs/All-Products-bg.avif')" }}
+    >
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-10">
 
         {/* Sidebar with Filter */}
         <aside className="w-full lg:w-1/4">
-          <div className="border rounded-lg shadow-sm p-4">
+          <div className="border rounded-lg shadow-sm p-4 bg-white/90">
             <h3 className="text-lg font-semibold mb-4">Browse Categories</h3>
             <ul className="space-y-2">
               {categories.map((category, index) => {
                 const isExpanded = expandedCategory === category.name;
                 const totalCount = category.subcategories.reduce((sum, sub) => sum + sub.count, 0);
-
                 return (
                   <li key={index} className="space-y-1">
                     <div
