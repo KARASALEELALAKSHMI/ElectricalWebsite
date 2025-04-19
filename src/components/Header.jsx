@@ -211,11 +211,11 @@ const [showBlog, setShowBlog] = useState(false);
     </div>
   )}
 </li>
-<li><a href="#" className="hover:text-purple-700">Bulk Enquiry</a></li>
 <li><a href="#services" className="hover:text-purple-700">Services</a></li>
 <li><a href="#projects" className="hover:text-purple-700">Projects</a></li>
 <li><a href="#" className="hover:text-purple-700">New Arrivals</a></li>
-<li><a href="#" className="hover:text-purple-700">ATL Kits Enquiry</a></li>
+<li><a href="#cart" className="hover:text-purple-700">Cart</a></li>
+<li><a href="#contact" className="hover:text-purple-700">Contact</a></li>
 {/* Blogs Dropdown */}
 <li className="relative">
   <div
@@ -241,8 +241,6 @@ const [showBlog, setShowBlog] = useState(false);
     </div>
   )}
 </li>
-
-    <li><a href="#" className="hover:text-purple-700">BOM Tool</a></li>
   </ul>
 
   {/* Right buttons */}
