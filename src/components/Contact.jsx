@@ -4,6 +4,7 @@ const Contact = () => {
   const [form, setForm] = useState({
     name: '',
     email: '',
+    phone: '',
     message: ''
   });
 
@@ -19,67 +20,78 @@ const Contact = () => {
   };
 
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', padding: '50px' }}>
-      <form onSubmit={handleSubmit} style={{ marginRight: '50px' }}>
-        <h1>Contact</h1>
-        <div style={{ marginBottom: '10px' }}>
-          <label>Name</label><br />
+    <div id="contact" className="flex justify-center p-10 flex-col md:flex-row gap-12">
+      <form onSubmit={handleSubmit} className="w-full md:w-[400px] space-y-4">
+        <h1 className="text-3xl font-bold mb-4">Contact</h1>
+        <div>
+          <label className="block mb-1 font-medium">Name</label>
           <input
             type="text"
             name="name"
             value={form.name}
             onChange={handleChange}
-            style={{ width: '300px', padding: '8px' }}
+            className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             required
           />
         </div>
-        <div style={{ marginBottom: '10px' }}>
-          <label>Email</label><br />
+        <div>
+          <label className="block mb-1 font-medium">Email</label>
           <input
             type="email"
             name="email"
             value={form.email}
             onChange={handleChange}
-            style={{ width: '300px', padding: '8px' }}
+            className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             required
           />
         </div>
-        <div style={{ marginBottom: '10px' }}>
-          <label>Phone</label><br />
+        <div>
+          <label className="block mb-1 font-medium">Phone</label>
           <input
-            type="Phone"
-            name="Phone"
-            value={form.Phone}
+            type="text"
+            name="phone"
+            value={form.phone}
             onChange={handleChange}
-            style={{ width: '300px', padding: '8px' }}
+            className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             required
           />
         </div>
-        <div style={{ marginBottom: '10px' }}>
-          <label>Message</label><br />
+        <div>
+          <label className="block mb-1 font-medium">Message</label>
           <textarea
             name="message"
             value={form.message}
             onChange={handleChange}
             rows="5"
-            style={{ width: '300px', padding: '8px' }}
+            className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             required
           />
         </div>
-        <button type="submit" style={{ padding: '10px 20px', backgroundColor: '#000', color: '#fff' }}>Send</button>
+        <button
+          type="submit"
+          className="bg-indigo-600 text-white px-6 py-2 rounded-md hover:bg-indigo-300 transition"
+        >
+          Send
+        </button>
       </form>
 
-      <div>
-        <h3>Contact Information</h3>
-        <p><strong>Address</strong><br />
-        123 Robotiks Way,<br />
-        Pune, MH 411057</p>
-
-        <p><strong>Email</strong><br />
-        info@robu.in</p>
-
-        <p><strong>Phone</strong><br />
-        +91 98765 43210</p>
+      <div className="w-full md:w-[300px] space-y-6">
+        <h3 className="text-xl font-semibold">Contact Information</h3>
+        <div>
+          <p className="font-medium">Address</p>
+          <p>
+            123 Robotiks Way,<br />
+            Pune, MH 411057
+          </p>
+        </div>
+        <div>
+          <p className="font-medium">Email</p>
+          <p>info@robu.in</p>
+        </div>
+        <div>
+          <p className="font-medium">Phone</p>
+          <p>+91 98765 43210</p>
+        </div>
       </div>
     </div>
   );
