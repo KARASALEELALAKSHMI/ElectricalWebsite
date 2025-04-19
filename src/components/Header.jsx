@@ -213,6 +213,7 @@ const [showBlog, setShowBlog] = useState(false);
 </li>
 <li><a href="#" className="hover:text-purple-700">Bulk Enquiry</a></li>
 <li><a href="#services" className="hover:text-purple-700">Services</a></li>
+<li><a href="#projects" className="hover:text-purple-700">Projects</a></li>
 <li><a href="#" className="hover:text-purple-700">New Arrivals</a></li>
 <li><a href="#" className="hover:text-purple-700">ATL Kits Enquiry</a></li>
 {/* Blogs Dropdown */}
