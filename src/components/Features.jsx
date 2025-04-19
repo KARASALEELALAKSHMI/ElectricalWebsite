@@ -64,7 +64,7 @@ const FeaturedProducts = () => {
       className="py-16 px-6 bg-cover bg-center"
       style={{ backgroundImage: `url('imgs/Feature.bg.avif')` }}
     >
-      <h2 className="text-3xl font-bold text-white mb-8">Featured Products</h2>
+      <h2 className="text-3xl font-bold text-black mb-8">Featured Products</h2>
       <div className="flex gap-6 overflow-x-auto pb-4">
         {products.map((product, index) => (
           <div
