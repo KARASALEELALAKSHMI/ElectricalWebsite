@@ -1,4 +1,4 @@
-import React from "react";
+ import React from "react";
 import { FaTwitter, FaFacebookF } from "react-icons/fa";
 import { MdEmail, MdLock } from "react-icons/md";
 
@@ -9,7 +9,7 @@ const Login = () => {
         {/* Left Side - Welcome */}
         <div className="w-1/2 bg-gradient-to-br from-purple-800 via-blue-700 to-pink-600 text-white p-10 flex flex-col justify-center relative">
           <div className="absolute top-6 left-6 text-3xl font-bold">◎ LOGO</div>
-          <h2 className="text-4xl font-bold mb-4">Welcome Page</h2>
+          <h2 className="text-4xl font-bold mb-4">Welcome to singin Page</h2>
           <p className="text-lg">Sign in to continue access</p>
           <div className="absolute bottom-6 left-6 text-sm text-white opacity-70">www.yoursite.com</div>
         </div>
