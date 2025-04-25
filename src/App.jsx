@@ -7,6 +7,7 @@ import Projects from './components/Projects'
 import Contact from './components/Contact'
 import CartPage from './components/Cart'
 import Login from './components/Login'
+import Signup from './components/Signup'
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       <Contact/>
       <CartPage/>
       <Login/>
+      <Signup/>
       
     </div>
   )
